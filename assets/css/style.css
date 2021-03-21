@@ -65,3 +65,42 @@ header nav {
 
 }
 /* Header Style End  */
+
+
+/* Footer Style Start */
+footer {
+    /* background-image: url("assets\images\footer-bg.png");  this either*/
+    width: 100%;
+    background-color: var(--sec);
+
+}
+
+footer h2 {
+    width: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-child {
+    width: 50%;
+    text-align: right;
+}
+
+footer p , footer a {
+
+    color: var(--tri);
+}
+
+footer h2 , footer h3 {
+
+    color: var(--prim);
+}
+
+
+
+
+
+/* Footer Style End */
