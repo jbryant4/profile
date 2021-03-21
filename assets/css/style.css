@@ -1,0 +1,67 @@
+/* set color scheme */
+:root {
+
+    --prim: darkgreen;
+    --sec: black;
+    --tri: white;
+}
+
+/* no margin/borders for all element  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Style Start */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    /* background-image: url('');   having probelm getting this to work*/
+    background-color: var(--sec);
+}
+
+header h1 {
+    width: 40%;
+    color: var(--prim);
+    padding: 10px 0 0 15px;
+
+}
+
+header h2 {
+    width: 100%;
+    text-align: right;
+    color: var(--prim);
+    padding: 0 30px 0 0 ;
+}
+
+header nav ul {
+    text-align: right;
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+    padding: 20px ;     
+}
+
+header nav ul li {
+    padding: 0 20px 0 20px;
+    color: var(--tri);
+}
+
+header nav ul li a {
+    color: var(--tri);
+    text-decoration: none;
+    font-size: large ;
+    font-weight: bold;
+     
+}
+
+header nav {
+    width: 60%;
+    
+
+}
+/* Header Style End  */
