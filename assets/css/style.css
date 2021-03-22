@@ -1,0 +1,172 @@
+/* set color scheme */
+:root {
+
+    --prim: darkgreen;
+    --sec: black;
+    --tri: white;
+}
+
+/* no margin/borders for all element  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Style Start */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    /* background-image: url('');   having probelm getting this to work*/
+    background-color: var(--sec);
+}
+
+header h1 {
+    width: 40%;
+    color: var(--prim);
+    padding: 10px 0 0 15px;
+
+}
+
+header h2 {
+    width: 100%;
+    text-align: right;
+    color: var(--prim);
+    padding: 0 30px 0 0 ;
+}
+
+header nav ul {
+    text-align: right;
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+    padding: 20px ;     
+}
+
+header nav ul li {
+    padding: 0 20px 0 20px;
+    color: var(--tri);
+}
+
+header nav ul li a {
+    color: var(--tri);
+    text-decoration: none;
+    font-size: large ;
+    font-weight: bold;
+     
+}
+
+header nav {
+    width: 60%;
+    
+
+}
+/* Header Style End  */
+
+/* About Me Style Start */
+.aboutme {
+    width: 100%;
+    background-color: rgba(30, 130, 76, .7);
+}
+
+.aboutme h2 {
+    color: var(--tri);
+}
+
+.aboutme-child{
+    width: 50%;
+}
+.aboutme-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme-imgwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#img1 {
+    width: 70%;
+    height: 300px;
+    padding: 10px;
+
+}
+
+#img2 , #img3 {
+    width: 50%;
+    height: 150px;
+    padding: 10px 15px 10px 15px
+}
+
+
+/* About Me Style End */
+
+/* ShowCase Style Start */
+
+.showcase-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#big-link {
+    width: 100%;
+}
+
+.small-link {
+    width: 33% ;
+}
+
+.showcase-child {
+    position: relative;
+}
+
+.bottom-left {
+    position: absolute;
+   
+}
+/* ShowCase Style End */
+
+/* Footer Style Start */
+footer {
+    /* background-image: url("assets\images\footer-bg.png");  this either*/
+    width: 100%;
+    background-color: var(--sec);
+
+}
+
+footer h2 {
+    width: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-child {
+    width: 50%;
+    text-align: right;
+}
+
+footer p , footer a {
+
+    color: var(--tri);
+}
+
+footer h2 , footer h3 {
+
+    color: var(--prim);
+}
+
+
+
+
+
+/* Footer Style End */
