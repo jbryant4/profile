@@ -66,6 +66,47 @@ header nav {
 }
 /* Header Style End  */
 
+/* About Me Style Start */
+.aboutme {
+    width: 100%;
+    background-color: rgba(30, 130, 76, .7);
+}
+
+.aboutme h2 {
+    color: var(--tri);
+}
+
+.aboutme-child{
+    width: 50%;
+}
+.aboutme-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme-imgwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#img1 {
+    width: 70%;
+    height: 300px;
+    padding: 10px;
+
+}
+
+#img2 , #img3 {
+    width: 50%;
+    height: 150px;
+    padding: 10px 15px 10px 15px
+}
+
+
+/* About Me Style End */
+
 
 /* Footer Style Start */
 footer {
