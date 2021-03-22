@@ -107,6 +107,31 @@ header nav {
 
 /* About Me Style End */
 
+/* ShowCase Style Start */
+
+.showcase-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#big-link {
+    width: 100%;
+}
+
+.small-link {
+    width: 33% ;
+}
+
+.showcase-child {
+    position: relative;
+}
+
+.bottom-left {
+    position: absolute;
+   
+}
+/* ShowCase Style End */
 
 /* Footer Style Start */
 footer {
