@@ -20,8 +20,13 @@ header {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    /* background-image: url('');   having probelm getting this to work*/
-    background-color: var(--sec);
+    background-image: url('../images/hero-wave.jpg');
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: sticky;
+    top:0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -55,8 +60,7 @@ header nav ul li a {
     color: var(--tri);
     text-decoration: none;
     font-size: large ;
-    font-weight: bold;
-     
+    font-weight: bold;   
 }
 
 header nav {
@@ -65,62 +69,112 @@ header nav {
 
 }
 /* Header Style End  */
+.hero {
+    background-image: url("../images/hero-wave.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;   
+}
+
+/* Hero Style Start */
+
+/* Hero Style End */
 
 /* About Me Style Start */
-.aboutme {
+#about-me {
     width: 100%;
-    background-color: rgba(30, 130, 76, .7);
+    background-image: url(../images/deep-ocean.jpg);
+    
+    
+}
+
+.aboutme-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.profile-img {
+    width: 25%;
+    height: auto;
+    
+}
+
+.aboutme-text{
+    width: 30%;
+    
 }
 
 .aboutme h2 {
     color: var(--tri);
 }
 
-.aboutme-child{
-    width: 50%;
-}
-.aboutme-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
+#img1, #img2 {
 
-.aboutme-imgwrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    width: 100%;
+    max-height:800px ;
+    margin: auto;
 }
 
-#img1 {
-    width: 70%;
-    height: 300px;
-    padding: 10px;
 
-}
 
-#img2 , #img3 {
-    width: 50%;
-    height: 150px;
-    padding: 10px 15px 10px 15px
-}
+
 
 
 /* About Me Style End */
 
 /* ShowCase Style Start */
+#my-work {
+    background-image: url(../images/ocean-floor.jpg);
+    background-size: 100% 100%;
+    background-position: bottom;
+}
 
 .showcase-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #big-link {
     width: 100%;
 }
 
+.small-link div {
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+#Run-Buddy {
+    background-image: url("../images/hero-bg.jpg");  
+    height: 600px;
+    max-width: 800px;
+    margin: auto ;
+    background-size:100% 100%; 
+}
+
+#Horiseon {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: 100% 100%;   
+}
+
+#Robot-Gladiator {
+    background-image: url("../images/robot-gladiator.jpg");
+    background-size: 100% 100%;   
+}
+
+#Coming-Soon {
+    background-image: url("../images/coming-soon.jfif");
+    background-size: 100% 100%;   
+}
+
 .small-link {
     width: 33% ;
+    margin: auto;
 }
 
 .showcase-child {
@@ -129,14 +183,18 @@ header nav {
 
 .bottom-left {
     position: absolute;
-   
+    bottom: 15px;
 }
 /* ShowCase Style End */
 
 /* Footer Style Start */
 footer {
-    /* background-image: url("assets\images\footer-bg.png");  this either*/
+    background-image: url("../images/footer-bg.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:center ;
     width: 100%;
+    height: 150px;
     background-color: var(--sec);
 
 }
