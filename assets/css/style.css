@@ -20,6 +20,22 @@ body {
     background-color: var(--bg);
 }
 
+section {
+    padding: 80px;
+}
+
+/* Section Title Style Start*/
+.section-title { 
+    font-size: 48px;
+    color: var(--tri);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 80%;
+
+}   
+/* Section Title Style End */
 
 /* Header Style Start */
 
@@ -118,9 +134,7 @@ header nav {
     background-color: var(--tri);
 }
 
-#about-me h2 {
-    color: var(--tri);
-}
+
 
 #img1,
 #img2 {
@@ -149,6 +163,7 @@ header nav {
 
 #big-link {
     width: 100%;
+    
 }
 
 .small-link div {
@@ -158,12 +173,15 @@ header nav {
 }
 
 #Run-Buddy {
-    background-image: url("../images/hero-bg.jpg");
     height: 600px;
     max-width: 800px;
     margin: auto;
+    background-image: url(../images/hero-bg.jpg);
     background-size: 100% 100%;
+    border: 8px solid var(--sec);
+    
 }
+
 
 #Horiseon {
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -182,7 +200,12 @@ header nav {
 
 .small-link {
     width: 33%;
-    margin: auto;
+    margin:30px auto;
+}
+
+.small-img {
+    border: 6px solid var(--prim);
+    
 }
 
 .showcase-child {
@@ -192,6 +215,7 @@ header nav {
 .bottom-left {
     position: absolute;
     bottom: 15px;
+    color: var(--sec);
 }
 
 
