@@ -1,134 +1,142 @@
 /* set color scheme */
-:root {
 
-    --prim: darkgreen;
-    --sec: black;
-    --tri: white;
+:root {
+    --prim: #bf764c;
+    --sec: #e1d7c2;
+    --tri: #4a5e6c;
+    --bg: #90926f;
 }
 
+
 /* no margin/borders for all element  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bg);
+}
+
+
 /* Header Style Start */
 
 header {
+    background-color: var(--tri);
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
-    background-image: url('../images/hero-wave.jpg');
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 9999;
+    margin: auto;
 }
 
 header h1 {
     width: 40%;
-    color: var(--prim);
     padding: 10px 0 0 15px;
-
+    color: var(--sec);
 }
 
 header h2 {
-    width: 100%;
-    text-align: right;
-    color: var(--prim);
-    padding: 0 30px 0 0 ;
+    padding: 0 0 10px 60px;
+    color: var(--sec);
 }
+
 
 header nav ul {
     text-align: right;
     display: flex;
     list-style-type: none;
-    justify-content: center; 
-    padding: 20px ;     
+    justify-content:flex-end;
+    padding: 20px;
 }
 
 header nav ul li {
     padding: 0 20px 0 20px;
-    color: var(--tri);
 }
 
 header nav ul li a {
-    color: var(--tri);
     text-decoration: none;
-    font-size: large ;
-    font-weight: bold;   
+    font-size: large;
+    font-weight: bold;
+    color: var(--sec);
 }
 
 header nav {
     width: 60%;
-    
+}
 
-}
+
 /* Header Style End  */
-.hero {
-    background-image: url("../images/hero-wave.jpg");
-    height: 450px;
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;   
-}
+
+
 
 /* Hero Style Start */
 
-/* Hero Style End */
-
-/* About Me Style Start */
-#about-me {
-    width: 100%;
-    background-image: url(../images/deep-ocean.jpg);
-    
+.hero {
+    height: 450px;
+    background-size: 100% 100%;
+    background-position: 80%;
+    width: 80%;
+    margin: auto;
+    background-image: url(../images/diverging-paths.jpg);
     
 }
 
-.aboutme-wrap {
+/* Hero Style End */
+
+
+/* About Me Style Start */
+
+#about-me {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+#aboutme-wrap {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
 .profile-img {
     width: 25%;
     height: auto;
-    
+    background-color: var(--prim);
+    padding: 20px ;
+
 }
 
-.aboutme-text{
+#aboutme-text {
     width: 30%;
-    
+    background-color: var(--tri);
 }
 
-.aboutme h2 {
+#about-me h2 {
     color: var(--tri);
 }
 
-#img1, #img2 {
-
+#img1,
+#img2 {
     width: 100%;
-    max-height:800px ;
+    max-height: 800px;
     margin: auto;
 }
 
 
-
-
-
-
 /* About Me Style End */
 
+
 /* ShowCase Style Start */
+
 #my-work {
-    background-image: url(../images/ocean-floor.jpg);
+    /* background-image: url(../images/ocean-floor.jpg); */
     background-size: 100% 100%;
     background-position: bottom;
 }
@@ -150,30 +158,30 @@ header nav {
 }
 
 #Run-Buddy {
-    background-image: url("../images/hero-bg.jpg");  
+    background-image: url("../images/hero-bg.jpg");
     height: 600px;
     max-width: 800px;
-    margin: auto ;
-    background-size:100% 100%; 
+    margin: auto;
+    background-size: 100% 100%;
 }
 
 #Horiseon {
     background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: 100% 100%;   
+    background-size: 100% 100%;
 }
 
 #Robot-Gladiator {
     background-image: url("../images/robot-gladiator.jpg");
-    background-size: 100% 100%;   
+    background-size: 100% 100%;
 }
 
 #Coming-Soon {
     background-image: url("../images/coming-soon.jfif");
-    background-size: 100% 100%;   
+    background-size: 100% 100%;
 }
 
 .small-link {
-    width: 33% ;
+    width: 33%;
     margin: auto;
 }
 
@@ -185,46 +193,68 @@ header nav {
     position: absolute;
     bottom: 15px;
 }
+
+
 /* ShowCase Style End */
 
+
 /* Footer Style Start */
+
 footer {
-    background-image: url("../images/footer-bg.png"); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position:center ;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+#footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#contact-me-wrap {
+    width: 60%;
+    background-color: var(--tri);
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    padding : 15px 20px;
+}
+
+#repo-wrap {
+    width: 20%;
+    background-color: var(--tri);
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    
+}
+
+footer p {
+    color: var(--prim);
+    text-align: right;
+    width: 50%;
+    padding: ;
+
+}
+
+footer a {
+    color: var(--prim);
     width: 100%;
-    height: 150px;
-    background-color: var(--sec);
+    text-align: center;
 
 }
 
 footer h2 {
+    color: var(--sec);
     width: 100%;
+    
 }
-
-.footer-wrap {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.footer-child {
-    width: 50%;
-    text-align: right;
-}
-
-footer p , footer a {
-
-    color: var(--tri);
-}
-
-footer h2 , footer h3 {
-
-    color: var(--prim);
-}
-
-
-
 
 
 /* Footer Style End */
