@@ -34,5 +34,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Features 
+Links in Nav take user to section on the page 
+
+Image links take user to a new tab with deplaoy application
+
+Application makes adjustments when resizing 
