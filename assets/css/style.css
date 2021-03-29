@@ -1,126 +1,216 @@
 /* set color scheme */
-:root {
 
-    --prim: darkgreen;
-    --sec: black;
-    --tri: white;
+:root {
+    --prim: #bf764c;
+    --sec: #e1d7c2;
+    --tri: #4a5e6c;
+    --bg: #90926f;
 }
 
+
 /* no margin/borders for all element  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 80px;
+}
+
+/* Section Title Style Start*/
+.section-title { 
+    font-size: 48px;
+    color: var(--tri);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 80%;
+
+}   
+/* Section Title Style End */
+
 /* Header Style Start */
 
 header {
+    background-color: var(--tri);
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
-    /* background-image: url('');   having probelm getting this to work*/
-    background-color: var(--sec);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin: auto;
 }
 
 header h1 {
     width: 40%;
-    color: var(--prim);
     padding: 10px 0 0 15px;
-
+    color: var(--sec);
 }
 
 header h2 {
-    width: 100%;
-    text-align: right;
-    color: var(--prim);
-    padding: 0 30px 0 0 ;
+    padding: 0 0 10px 60px;
+    color: var(--sec);
 }
+
 
 header nav ul {
     text-align: right;
     display: flex;
     list-style-type: none;
-    justify-content: center; 
-    padding: 20px ;     
+    justify-content:flex-end;
+    padding: 20px;
 }
 
 header nav ul li {
     padding: 0 20px 0 20px;
-    color: var(--tri);
 }
 
 header nav ul li a {
-    color: var(--tri);
     text-decoration: none;
-    font-size: large ;
+    font-size: large;
     font-weight: bold;
-     
+    color: var(--sec);
 }
 
 header nav {
     width: 60%;
-    
-
 }
+
+
 /* Header Style End  */
 
+
+
+/* Hero Style Start */
+
+.hero {
+    height: 450px;
+    background-size: 100% 100%;
+    background-position: 80%;
+    width: 80%;
+    margin: auto;
+    background-image: url(../images/diverging-paths.jpg);
+    
+}
+
+/* Hero Style End */
+
+
 /* About Me Style Start */
-.aboutme {
+
+#about-me {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+#aboutme-wrap {
     width: 100%;
-    background-color: rgba(30, 130, 76, .7);
-}
-
-.aboutme h2 {
-    color: var(--tri);
-}
-
-.aboutme-child{
-    width: 50%;
-}
-.aboutme-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.aboutme-imgwrap {
+.profile-img {
+    width: 25%;
+    max-height: 850px;
+    background-color: var(--prim);
+    padding: 20px ;
+    border-radius: 25px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    align-items: center;
 }
 
-#img1 {
-    width: 70%;
-    height: 300px;
-    padding: 10px;
-
+#aboutme-text {
+    max-width: 40%;
+    max-height: 850px;
+    background-color: var(--tri);
+    border-radius: 15px 50px;
+    padding: 15px;
+    align-items: center;
 }
 
-#img2 , #img3 {
-    width: 50%;
-    height: 150px;
-    padding: 10px 15px 10px 15px
+#aboutme-text p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: larger;
+line-height: 1.5;
+color: var(--sec);
+}
+
+.aboutme-body  {
+text-indent: 10%;
+text-align: center;
+}
+
+
+
+#img1,
+#img2 {
+    width: 100%;
+    max-height: 800px;
+    margin: auto;
+    border-radius: 25px;
 }
 
 
 /* About Me Style End */
 
-/* ShowCase Style Start */
 
-.showcase-wrap {
+/* ShowCase Style Start */
+#my-work {
+    width: 80%;
+    margin: auto;
+}
+
+.small-link div {
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.small-link {
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+
 }
 
 #big-link {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 60px 0;
 }
 
-.small-link {
-    width: 33% ;
+#small-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+}
+
+#big-img {
+    height: 600px;
+    max-width: 800px;
+    border: 8px solid var(--sec);
+
+}
+
+.small-img {
+    height: 300px;
+    width: 300px;
+    border: 6px solid var(--prim);   
 }
 
 .showcase-child {
@@ -129,44 +219,157 @@ header nav {
 
 .bottom-left {
     position: absolute;
-   
+    bottom: 15px;
+    left: 10px;
+    color: var(--sec);
 }
+
+.showcase-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* ShowCase Style End */
 
+
 /* Footer Style Start */
+
 footer {
-    /* background-image: url("assets\images\footer-bg.png");  this either*/
+    width: 80%;
+    margin: auto;
+}
+
+
+
+#footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#contact-me-wrap {
+    width: 60%;
+    background-color: var(--tri);
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    padding : 15px 20px;
+}
+
+#repo-wrap {
+    width: 20%;
+    background-color: var(--tri);
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    
+}
+
+footer p {
+    color: var(--prim);
+    text-align: right;
+    width: 50%;
+    padding:10px;
+    font-size: 20px;
+
+}
+
+footer a {
+    color: var(--prim);
     width: 100%;
-    background-color: var(--sec);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
 
 }
 
 footer h2 {
+    color: var(--sec);
     width: 100%;
+    
 }
-
-.footer-wrap {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.footer-child {
-    width: 50%;
-    text-align: right;
-}
-
-footer p , footer a {
-
-    color: var(--tri);
-}
-
-footer h2 , footer h3 {
-
-    color: var(--prim);
-}
-
-
-
-
 
 /* Footer Style End */
+
+/* Media query for smaller monitor */
+
+@media screen and (max-width: 1725px) {
+
+    #aboutme-text {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .profile-img{
+        order: 2;
+        width: 50%;
+    }
+}
+
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 1050px) {
+
+    #my-work {
+        width: unset;
+    }
+
+    .body-section {
+        width: 100%;
+    }
+
+    #big-img {
+        max-width: unset;
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+/* Media Query for mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #aboutme-text {
+        max-height:unset;
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+
+
+    #contact-me-wrap, #repo-wrap {
+        width: 100%;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    footer p {
+        text-align: unset;
+    }
+    #contact-me-wrap h2{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}

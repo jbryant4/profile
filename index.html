@@ -13,9 +13,9 @@
 
 <body>
 
-    <header>
+    <header class="body-section">
         <!--page title-->
-        <h1>Joseph Bryant</h1>
+        <h1>Joseph Bryant:</h1>
 
         <!--links to page sections-->
         <nav>
@@ -29,111 +29,148 @@
                 </li>
 
                 <li>
-                    <a href="contact-me">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
         </nav>
 
-        <!--sub title-->
-        <h2>The Code of Ore0s</h2>
+        <!-- <h2>a new path</h2> -->
 
     </header>
 
-    <!--about me section-->
-    <section class="aboutme" id="about-me">
-        <h2>About Me</h2>
+    <!-- Hero Section -->
+    <section class=" hero body-section"></section>
 
-        <div class="aboutme-wrap">
+    <!--About me section-->
+    <section id="about-me" class="body-section">
+        <h2 class="section-title">About Me</h2>
+
+
+        <div id="aboutme-wrap">
+
+            <!-- left images-->
+            <div class="profile-img ">
+                <img id="img1" src="./assets/images/profile-pic1.jpg" alt="" />
+            </div>
+
             <!--paragraph-->
-            <p class="aboutme-child">asdkjhgaf lfkajfhalsdkfj laskdjfh sdlkfjsh a alkfjhflk sjhaskdljfw alskjf lkfjh
-                asdlkfj jklas hfjks </p>
+            <div id="aboutme-text">
+                <p>Hello my name is Joesph Bryant but I go by Joe.</p> <br>
+                <p class="aboutme-body">Although 2020 was a really rough for year for all of us, a lot of life changing moments happened in
+                    my life. My wife and I introduced a little girl into the world making our family of three into four.
+                    Between her and our 18 month old son we definitely have our hands full at home. Speaking of home we
+                    recently purchased our first house at the start of the year.</p>
+                <p class="aboutme-body">For the last nine years I have been working at In N Out Burger, 5 of those years as a manager. The
+                    best part about working at in n out is the fast pace and upbeat atmosphere. For me personally, I
+                    thoroughly enjoyed training associate to be more efficient and to maximize their output. Coming up I
+                    always thought that I would be in it for the long haul but life has a funny way of shaking things
+                    up. I realized that I want to be more present in my family’s life. While in n out is a great job,
+                    the inconsistent work schedule made it hard to maintain a good work life balance.</p>
+                <p class="aboutme-body">My patron saint is St Joesph the worker. I would like to think that I emulate that work style. I
+                    am never one to shy away from a puzzle or a challenge. I have a knack for working working with my
+                    hands. I combined this trait with my love for the nerdy and even made a tardis for my wedding. I
+                    think that the combination of these resists and others make me a good fit for the coding world. I am
+                    excited to start down this new path as I partake in the UofA coding boot camp.</p>
+                <br>
+                <br>
+                <p>Fun Fact: in my old in n out days I was given an award for my dance moves.</p>
+            </div>
 
-            <!--images-->
-            <div class="aboutme-imgwrap aboutme-child">
-                <img id="img1" src="./assets/images/300.png" alt="" />
-                <img id="img2" src="./assets/images/300.png" alt="" />
-                <img id="img3" src="./assets/images/300.png" alt="" />
+            <!-- right images  -->
+            <div class="profile-img">
+                <img id="img2" src="./assets/images/kids.jpg" alt="" />
             </div>
         </div>
     </section>
 
-    <!--my work-->
-    <section id="my-work">
-        <h2>My Work</h2>
+    <!--My work-->
+    <section id="my-work" class="body-section">
+        <h2 class="section-title">My Work</h2>
 
         <div class="showcase-wrap">
 
-            <div id="big-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img title="example" src="./assets/images/300.png">
+
+            <!-- <a id="big-link" class="showcase-child" href="https://jbryant4.github.io/run-buddy/"  target="blank" >
+                <div id="Run-Buddy">
+                    <h3 class="bottom-left">RUN BUDDY</h3>
+                </div>
+            </a> -->
+
+            <div id="big-link">
+                <a class="showcase-child" href="https://jbryant4.github.io/run-buddy/" target="blank">
+                    <img id="big-img" src="./assets/images/hero-bg.jpg" alt="">
+                    <h3 class="bottom-left">RUN BUDDY</h3>
+
                 </a>
             </div>
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
-            </div>
+            <div id="small-links">
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
-            </div>
+                <div class="small-link">
+                    <a class="showcase-child" href="https://jbryant4.github.io/Horiseon-Page-Cleanup/" target="blank">
+                        <img class="small-img" src="./assets/images/digital-marketing-meeting.jpg" alt="">
+                        <h3 class="bottom-left">HORISEON: page clean up</h3>
+                    </a>
+                </div>
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
-            </div>
+                <div class="small-link">
+                    <a class="showcase-child" href="https://jbryant4.github.io/robot-gladiator/" target="blank">
+                        <img class="small-img" src="./assets/images/robot-gladiator.jpg" alt="">
+                        <h3 class="bottom-left">ROBOT GLADIATOR</h3>
+                    </a>
+                </div>
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
-            </div>
+                <div class="small-link">
+                    <a class="showcase-child" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
+                        <img class="small-img" src="./assets/images/coming-soon.jfif" alt="">
+                        <h3 class="bottom-left">CLICK ME FOR A LAUGH</h3>
+                    </a>
+                </div>
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
-            </div>
+                <div class="small-link">
+                    <a class="showcase-child" href="https://www.youtube.com/watch?v=8RxDVdP2TZ8" target="blank">
+                        <img class="small-img" src="./assets/images/coming-soon.jfif" alt="">
+                        <h3 class="bottom-left">CLICK ME FOR A LAUGH</h3>
+                    </a>
+                </div>
 
-            <div class="small-link" class="showcase-child">
-                <h3 class="bottom-left">TITLE</h3>
-                <a  href="">
-                    <img src="./assets/images/300.png">
-                </a>
+                <div class="small-link">
+                    <a class="showcase-child" href="https://www.youtube.com/watch?v=jO9-fgPOK48" target="blank">
+                        <img class="small-img" src="./assets/images/coming-soon.jfif" alt="">
+                        <h3 class="bottom-left">CLICK ME FOR A LAUGH</h3>
+                    </a>
+                </div>
+
+                <div class="small-link">
+                    <a class="showcase-child" href="https://www.youtube.com/watch?v=zsa3I5lpUmA" target="blank">
+                        <img class="small-img" src="./assets/images/coming-soon.jfif" alt="">
+                        <h3 class="bottom-left">CLICK ME FOR A LAUGH</h3>
+                    </a>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <footer id="contact-me">
-        <h2>Contact Me:</h2>
+    <!-- Footer Section -->
+    <footer id="contact-me" class="body-section">
 
-        <div class="footer-wrap">
+        <div id="footer-wrap">
 
-            <h3 class="footer-child">Reach me at:</h3>
+            <div id="contact-me-wrap">
+                <h2>Contact Me:</h2>
 
-            <h3 class="footer-child">Check out: </h3>
-
-            <div class="footer-child">
                 <p> Cell: 602-743-4252 </p>
 
                 <p>Email: joebryant614@gmail.com</p>
 
             </div>
+            <div id="repo-wrap">
+                <h2>Check out: </h2>
 
+                <a href="https://github.com/jbryant4" class="footer-child" target="-blank">My Repo on Github</a>
+            </div>
 
-
-            <a href="https://github.com/jbryant4" class="footer-child" target="-blank">My Repo</a>
         </div>
     </footer>
 
