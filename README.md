@@ -35,8 +35,21 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Features 
-Links in Nav take user to section on the page 
+Links in Nav take user to section on the page:
+![image](https://user-images.githubusercontent.com/78622927/112789067-179de680-9011-11eb-8eb5-998af15bb9c3.png)
 
-Image links take user to a new tab with deplaoy application
 
-Application makes adjustments when resizing 
+Image links take user to a new tab with deplaoy application and first link is bigger than the rest:
+![image](https://user-images.githubusercontent.com/78622927/112788924-cdb50080-9010-11eb-8ef1-e94fa468b9dd.png)
+
+Ps: coming soon links work as well, promise sfw
+
+Application makes adjustments when resizing:
+![image](https://user-images.githubusercontent.com/78622927/112788861-acecab00-9010-11eb-9136-77414a6f505e.png)
+
+
+### Application Link
+https://jbryant4.github.io/profile
+
+#### Last comments
+Application still has a lot I want to add. Writing code from scratch is definatly going to need some repeat practice on my end.  
